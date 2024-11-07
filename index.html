@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mycart.com - Fashion for All</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">mycart.com</div>
+        <div class="header-options">
+            <div class="cart">🛒 Cart</div>
+            <div class="auth-buttons">
+                <button onclick="signUp()">Sign Up</button>
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Grid -->
+    <main>
+        <div class="product-grid">
+            <!-- 10 rows, each with 5 products -->
+            <script>generateProductRows(10, 5);</script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us: support@mycart.com | Phone: +1 234 567 890</p>
+        </div>
+        <div class="social-icons">
+            <a href="#">📘 Facebook</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📸 Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
